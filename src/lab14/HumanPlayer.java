@@ -13,19 +13,15 @@ public class HumanPlayer extends Player{
 
 	@Override
 	public Roshambo generateRoshambo() {
-		System.out.println("Rock, paper or scissors? (R/P/S): ");
-		// ask for choice
-		String input = scnr.nextLine();
-		// get choice
-		// TO DO....validate choice
-		if (input.startsWith("r")) {
+		System.out.println();
+		String input = Validator.getChoice(scnr, "Rock, paper or scissors? (R/P/S): ", new String[] {"R", "P", "S"});
+		if (input.startsWith("R")) {
 			return Roshambo.ROCK;
-		} else if (input.startsWith("p")) {
+		} else if (input.startsWith("P")) {
 			return Roshambo.PAPER;
 		} else {
 			return Roshambo.SCISSORS;
 		}
-		// return corresponding Roshambo enum value
 	}
 
 }
