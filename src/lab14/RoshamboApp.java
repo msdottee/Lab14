@@ -2,7 +2,7 @@ package lab14;
 
 import java.util.Scanner;
 
-public class RockPaperScissors {
+public class RoshamboApp {
 
 	private static Scanner scnr = new Scanner(System.in);
 	
@@ -25,7 +25,7 @@ public class RockPaperScissors {
 		if (input.startsWith("A")) {
 			return new RockPlayer("Albert");
 		} else {
-			return new PaperPlayer("Bertha");
+			return new RandomPlayer("Bertha");
 		}
 	}
 	
