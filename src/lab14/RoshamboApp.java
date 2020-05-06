@@ -32,6 +32,7 @@ public class RoshamboApp {
 			
 			if (answer.equals("N")) {
 				playGame = false;
+				System.out.println("Thanks for playing!");
 			}
 		}
 	}
